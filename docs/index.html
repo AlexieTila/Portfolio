@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="navbar-brand me-1">Alex.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" tabindex="0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" tabindex="0">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link" tabindex="0">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" tabindex="0">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <img src="pictures/alex.jpg" alt="Profile Image">
+        <div class="hero-text">
+            <h1>Hi, I'm Alex!</h1>
+            <p>Blending creativity with precision to build interactive web experiences that leave a lasting impression.</p>
+            <div class="cta">
+                <a href="projects.html">Explore Projects</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featured Projects Section -->
+    <section id="featured-projects" class="projects py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 text-pink">Featured Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm hover-card">
+                        <img src="pictures/interactive_port_web.webp" class="card-img-top" alt="Interactive Portfolio">
+                        <div class="card-body">
+                            <h5 class="card-title text-pink">Interactive Portfolio</h5>
+                            <p class="card-text">Designed for responsiveness and seamless engagement across all devices.</p>
+                            <a href="projects.html" class="btn btn-primary btn-hover">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm hover-card">
+                        <img src="pictures/ui.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title text-pink">Enhanced UI Components Library</h5>
+                            <p class="card-text">Reusable, sleek, and interactive UI elements built for seamless integration.</p>
+                            <a href="projects.html" class="btn btn-primary btn-hover">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm hover-card">
+                        <img src="pictures/emoji.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title text-pink">Comment & Emoji Reaction System</h5>
+                            <p class="card-text">Engage users with real-time comments and expressive emoji reactions.</p>
+                            <a href="projects.html" class="btn btn-primary btn-hover">View Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 text-pink">Key Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-code-slash fs-2 text-pink"></i>
+                    <h5>Web Development</h5>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-bootstrap fs-2 text-pink"></i>
+                    <h5>Frameworks</h5>
+                    <p>Bootstrap, Tailwind CSS</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-phone fs-2 text-pink"></i>
+                    <h5>Responsive Design</h5>
+                    <p>Fluid Layouts & Mobile First</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="bi bi-palette fs-2 text-pink"></i>
+                    <h5>UI/UX Design</h5>
+                    <p>Figma, Adobe XD</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+    <!-- Footer Section -->
+<footer class="custom-footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4 text-center">
+                <h5>Contact Me 📩</h5>
+                <p>Email: <a href="mailto:alexie@example.com" class="footer-link">alexie@example.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <!-- Social Links -->
+            <div class="col-md-4 text-center">
+                <h5>Let's Connect ✨</h5>
+                <div class="social-links d-flex justify-content-center gap-3">
+                    <a href="https://x.com" class="footer-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/login" class="footer-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com" class="footer-icon" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="col-md-4 text-center">
+                <p>&copy; 2025 Alexie's Portfolio</p>
+                <p>Designed with ❤️ and a splash of creativity.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

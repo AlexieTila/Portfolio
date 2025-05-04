@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+ <!-- Header Section -->
+ <header class="navbar navbar-expand-lg fixed-top">
+    <div class="container d-flex align-items-center">
+        <a href="index.html" class="navbar-brand me-1">Alex.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" tabindex="0">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" tabindex="0">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link" tabindex="0">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" tabindex="0">Contact</a>
+                </li>
+            </ul>                
+        </div>
+    </div>
+</header>
+
+
+<section class="contact">
+    <div class="contact-container">
+        <h1>Let's Connect</h1>
+        <p><strong>Looking to hire or just want to say hello?</strong> <br>Drop me a message below!</p>
+
+        <form action="https://formsubmit.co/20232747@s.ubaguio.edu" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name"><i class="bi bi-person-fill"></i> Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><i class="bi bi-envelope-fill"></i> Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message-type"><i class="bi bi-bookmark-fill"></i> Message Type</label>
+                <select class="form-select" id="message-type" name="_subject" required>
+                    <option value="Hire Me">Hire Me</option>
+                    <option value="Just a Message">Just a Message</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message"><i class="bi bi-chat-left-dots-fill"></i> Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                <span class="error-message" id="message-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="attachment"><i class="bi bi-image-fill"></i> Attach an Image (Optional)</label>
+                <input type="file" class="form-control" id="attachment" name="attachment" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn-hover"><i class="bi bi-send"></i> Send Message</button>
+
+            <!-- Success Message (Will need custom JS to show/hide after submit) -->
+            <p id="success-message" class="success-message">Your message has been sent successfully! 🎉</p>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+<footer class="custom-footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4 text-center">
+                <h5>Contact Me 📩</h5>
+                <p>Email: <a href="mailto:alexie@example.com" class="footer-link">alexie@example.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <!-- Social Links -->
+            <div class="col-md-4 text-center">
+                <h5>Let's Connect ✨</h5>
+                <div class="social-links d-flex justify-content-center gap-3">
+                    <a href="https://x.com" class="footer-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/login" class="footer-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com" class="footer-icon" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="col-md-4 text-center">
+                <p>&copy; 2025 Alexie's Portfolio</p>
+                <p>Designed with ❤️ and a splash of creativity.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

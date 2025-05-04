@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Alexie's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="navbar-brand me-1">Alex.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" tabindex="0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link" tabindex="0">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link" tabindex="0">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" tabindex="0">Contact</a>
+                    </li>
+                </ul>                
+            </div>
+        </div>
+    </header>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="hero-title"> Featured Projects</h1>
+            <p class="hero-subtitle">Crafting engaging digital experiences through design and interactivity.</p>
+        </div>
+    </section>
+
+    <section class="projects-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="pictures/interactive_port_web.webp" alt="Interactive Portfolio" class="img-fluid">
+                        <h4 class="project-title">Interactive Portfolio</h4>
+                        <p class="project-description">A sleek portfolio showcasing UI animations. Designed for responsiveness and seamless engagement across all devices.</p>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <div class="extended-description">
+                            <ul class="tech-list">
+                                <li><i class="bi bi-code-slash"></i> HTML</li>
+                                <li><i class="bi bi-palette"></i> CSS Animations & Transitions</li>
+                                <li><i class="bi bi-lightbulb"></i> JavaScript Interactivity</li>
+                                <li><i class="bi bi-bootstrap"></i> Bootstrap Framework</li>
+                            </ul>
+                        </div>
+                        <button class="like-btn" onclick="likeProject(this)">
+                            <i class="bi bi-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="pictures/ui.png" alt="Enhanced UI Components Library" class="img-fluid">
+                        <h4 class="project-title">Enhanced UI Components Library</h4>
+                        <p class="project-description">Reusable, sleek, and interactive UI elements built for seamless integration, responsiveness, and modern aesthetics.</p>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <div class="extended-description">
+                            <ul class="tech-list">
+                                <li><i class="bi bi-code-slash"></i> HTML</li>
+                                <li><i class="bi bi-palette"></i> CSS Animations & Transitions</li>
+                                <li><i class="bi bi-lightbulb"></i> JavaScript Interactivity</li>
+                                <li><i class="bi bi-bootstrap"></i> Bootstrap Framework</li>
+                            </ul>
+                        </div>
+                        <button class="like-btn" onclick="likeProject(this)">
+                            <i class="bi bi-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="pictures/emoji.png" alt="Comment & Emoji Reaction System" class="img-fluid">
+                        <h4 class="project-title"></h4>
+                        <p class="project-description">Engage users with real-time comments and expressive emoji reactions, creating an interactive and dynamic experience.</p>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <div class="extended-description">
+                            <ul class="tech-list">
+                                <li><i class="bi bi-code-slash"></i> HTML</li>
+                                <li><i class="bi bi-palette"></i> CSS Animations & Transitions</li>
+                                <li><i class="bi bi-lightbulb"></i> JavaScript Interactivity</li>
+                                <li><i class="bi bi-bootstrap"></i> Bootstrap Framework</li>
+                            </ul>
+                        </div>
+                        <button class="like-btn" onclick="likeProject(this)">
+                            <i class="bi bi-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="pictures/carousel.jpg" alt="Modal & Carousel Integration" class="img-fluid">
+                        <h4 class="project-title">Modal & Carousel Integration</h4>
+                        <p class="project-description">User experience with modals and carousels for content navigation and dynamic presentation.</p>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <div class="extended-description">
+                            <ul class="tech-list">
+                                <li><i class="bi bi-code-slash"></i> HTML</li>
+                                <li><i class="bi bi-palette"></i> CSS Animations & Transitions</li>
+                                <li><i class="bi bi-lightbulb"></i> JavaScript Interactivity</li>
+                                <li><i class="bi bi-bootstrap"></i> Bootstrap Framework</li>
+                            </ul>
+                        </div>
+                        <button class="like-btn" onclick="likeProject(this)">
+                            <i class="bi bi-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="pictures/hover.png" alt="Dynamic Hover Effects Collection" class="img-fluid">
+                        <h4 class="project-title">Dynamic Hover Effects Collection</h4>
+                        <p class="project-description">Smooth, interactive modals and carousels for seamless content navigation.</p>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <div class="extended-description">
+                            <ul class="tech-list">
+                                <li><i class="bi bi-code-slash"></i> HTML</li>
+                                <li><i class="bi bi-palette"></i> CSS Animations & Transitions</li>
+                                <li><i class="bi bi-lightbulb"></i> JavaScript Interactivity</li>
+                                <li><i class="bi bi-bootstrap"></i> Bootstrap Framework</li>
+                            </ul>
+                        </div>
+                        <button class="like-btn" onclick="likeProject(this)">
+                            <i class="bi bi-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="project-card">
+                        <img src="pictures/uiux.jpg" alt="Project 1" class="img-fluid">
+                        <h4 class="project-title">UI/UX-Focused Web Layout Designs</h4>
+                        <p class="project-description">Thoughtfully designed landing pages, forms, and navigation systems.</p>
+                        <button class="read-more-btn" onclick="toggleDescription(this)">Read More</button>
+                        <div class="extended-description">
+                            <ul class="tech-list">
+                                <li><i class="bi bi-code-slash"></i> HTML</li>
+                                <li><i class="bi bi-palette"></i> CSS Animations & Transitions</li>
+                                <li><i class="bi bi-lightbulb"></i> JavaScript Interactivity</li>
+                                <li><i class="bi bi-bootstrap"></i> Bootstrap Framework</li>
+                            </ul>
+                        </div>
+                        <button class="like-btn" onclick="likeProject(this)">
+                            <i class="bi bi-heart"></i> <span class="like-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalProjectTitle">Project Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Carousel Section -->
+                    <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" id="carouselInner">
+                            <!-- Carousel items will be added dynamically -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <p id="modalProjectDescription">Project description will appear here.</p>
+                    <h6>Technologies Used:</h6>
+                    <ul id="modalTechList" class="tech-list">
+                        <!-- Tech list items will be added dynamically -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- Footer Section -->
+<footer class="custom-footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Info -->
+            <div class="col-md-4 text-center">
+                <h5>Contact Me 📩</h5>
+                <p>Email: <a href="mailto:alexie@example.com" class="footer-link">alexie@example.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <!-- Social Links -->
+            <div class="col-md-4 text-center">
+                <h5>Let's Connect ✨</h5>
+                <div class="social-links d-flex justify-content-center gap-3">
+                    <a href="https://x.com" class="footer-icon" target="_blank"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/login" class="footer-icon" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com" class="footer-icon" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="col-md-4 text-center">
+                <p>&copy; 2025 Alexie's Portfolio</p>
+                <p>Designed with ❤️ and a splash of creativity.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="projects.js"></script>
+</body>
+</html>
